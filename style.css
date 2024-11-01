@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Button Container */
+.button-container {
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black; /* Change background color to black */
+    color: white; /* Text color remains white for contrast */
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #444; /* Slightly lighter black for hover effect */
+}
+
+/* Input Styles */
+.input-group {
+    margin: 10px 0; /* Add margin to separate input groups */
+}
+
+label {
+    display: block; /* Make the label take the full width */
+    margin-bottom: 5px; /* Add space between label and input */
+    font-weight: bold; /* Make the label text bold */
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin: 5px 0; /* Adjust margin for better spacing */
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Result Text Style */
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Blinking Heading Animation */
+.blinking {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}

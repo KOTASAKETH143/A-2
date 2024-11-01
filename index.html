@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="blinking">Assignment - 2</h1>
+
+        <!-- Functionality Selection Buttons -->
+        <div class="button-container">
+            <button onclick="showSection('reverse')">String Reverser</button>
+            <button onclick="showSection('palindrome')">Number Palindrome Checker</button>
+            <button onclick="showSection('tip')">Tip Calculator</button>
+        </div>
+
+        <!-- String Reverser Section -->
+        <div id="reverseSection" class="hidden">
+            <h2>String Reverser</h2>
+            <label for="inputString">Enter a String:</label>
+            <input type="text" id="inputString" placeholder="Enter string" required>
+            <button onclick="reverseString()">Reverse</button>
+            <p id="resultString"></p>
+        </div>
+
+        <!-- Number Palindrome Checker Section -->
+        <div id="palindromeSection" class="hidden">
+            <h2>Number Palindrome Checker</h2>
+            <label for="inputNumber">Enter a Series of Numbers:</label>
+            <input type="text" id="inputNumber" placeholder="Enter numbers only" required>
+            <button onclick="checkPalindrome()">Check</button>
+            <p id="resultPalindrome"></p>
+        </div>
+
+        <!-- Tip Calculator Section -->
+        <div id="tipSection" class="hidden">
+            <h2>Tip Calculator</h2>
+            <div class="input-group">
+                <label for="subtotal">Subtotal:</label>
+                <input type="number" id="subtotal" placeholder="Enter subtotal" required>
+            </div>
+            <div class="input-group">
+                <label for="tipPercentage">Tip Percentage:</label>
+                <input type="number" id="tipPercentage" placeholder="Enter tip percentage" required>
+            </div>
+            <button onclick="calculateTotal()">Calculate Total</button>
+            <p id="resultTip"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
